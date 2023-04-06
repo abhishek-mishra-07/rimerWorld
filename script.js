@@ -19,3 +19,24 @@ const blogPosts = data.blogPosts.map(post => {
     `;
 }).join('');
 document.getElementById("blog-posts").innerHTML = blogPosts;
+const rssFeedURL = "https://attentiondeficitworld.substack.com/feed";
+fetch(rssFeedURL)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(xml => {
+    const items = xml.getElementsByTagName("item");
+    let blogPosts = "";
+
+    for (let i = 0; i < items.length; i++) {
+      const title = items[i].getElementsByTagName("title")[0].textContent;
+      const link = items[i].getElementsByTagName("link")[0].textContent;
+
+      blogPosts += `
+        <div class="blog-post">
+          <h3><a href="${link}" target="_blank">${title}</a></h3>
+        </div>
+      `;
+    }
+
+    document.getElementById("blog-posts").innerHTML = blogPosts;
+  });
