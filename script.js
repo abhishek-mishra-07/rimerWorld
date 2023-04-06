@@ -20,7 +20,7 @@ const blogPosts = data.blogPosts.map(post => {
 }).join('');
 document.getElementById("blog-posts").innerHTML = blogPosts;
 const rssFeedURL = "https://attentiondeficitworld.substack.com/feed";
-const corsProxy = "https://cors-anywhere.herokuapp.com/";
+const corsProxy = "https://api.allorigins.win/raw?url=";
 fetch(corsProxy + rssFeedURL)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
