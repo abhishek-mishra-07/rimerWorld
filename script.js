@@ -41,3 +41,58 @@ fetch(corsProxy + rssFeedURL)
 
     document.getElementById("blog-posts").innerHTML = blogPosts;
   });
+  // Display services
+const servicesItems = document.getElementById("services-items");
+services.forEach(service => {
+  const serviceItem = `
+    <div class="service-item">
+      <img src="${service.icon}" alt="${service.title}" />
+      <h3>${service.title}</h3>
+    </div>
+  `;
+  servicesItems.innerHTML += serviceItem;
+});
+// Display technologies
+const technologiesItems = document.getElementById("technologies-items");
+technologies.forEach(technology => {
+  const technologyItem = `
+    <div class="technology-item">
+      <img src="${technology.icon}" alt="${technology.name}" />
+      <h3>${technology.name}</h3>
+    </div>
+  `;
+  technologiesItems.innerHTML += technologyItem;
+});
+// Display experiences
+const experiencesItems = document.getElementById("experiences-items");
+experiences.forEach(experience => {
+  const experienceItem = `
+    <div class="experience-item">
+      <img src="${experience.icon}" alt="${experience.title}" />
+      <h3>${experience.title}</h3>
+      <h4>${experience.company_name}</h4>
+      <p>${experience.date}</p>
+      <ul>
+        ${experience.points.map(point => `<li>${point}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+  experiencesItems.innerHTML += experienceItem;
+});
+// Display projects
+const projectsItems = document.getElementById("projects-items");
+projects.forEach(project => {
+  const projectItem = `
+    <div class="project-item">
+      <img src="${project.image}" alt="${project.name}" />
+      <h3>${project.name}</h3>
+      <p>${project.description}</p>
+      <div>
+        ${project.tags
+          .map(tag => `<span class="tag ${tag.color}">${tag.name}</span>`)
+          .join("")}
+      </div>
+      <a href="${project.source_code_link}" target="_blank">View Source Code</a>
+</div>`;
+projectsItems.innerHTML += projectItem;
+});
