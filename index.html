@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio & Blog</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.classless.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .theme-toggle {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      z-index: 1000;
+    }
+  </style>
+  
 </head>
 <body>
   <header>
@@ -18,7 +31,7 @@
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
-  </header>  
+  </header>
 
   <div class="container">
     <header>
@@ -64,5 +77,6 @@
   <script src="data.js"></script>
   <script src="script.js"></script>
   <script src="about.js"></script>
+  
 </body>
 </html>
