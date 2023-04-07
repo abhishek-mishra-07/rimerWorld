@@ -8,6 +8,11 @@
     max-width: 200px;
   }
   
+  .service-item img {
+    width: 64px;
+    height: 64px;
+  }
+  
   /* Technologies */
   .technology-item {
     display: inline-flex;
@@ -16,6 +21,11 @@
     margin: 10px;
     padding: 10px;
     max-width: 200px;
+  }
+  
+  .technology-item img {
+    width: 64px;
+    height: 64px;
   }
   
   /* Experiences */
