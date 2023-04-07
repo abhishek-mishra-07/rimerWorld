@@ -75,7 +75,8 @@
     font-size: 12px;
     color: white;
   }
-    
+  
+  /* Gradient text classes */
   .blue-text-gradient {
     background-image: linear-gradient(to right, #36d1dc, #5b86e5);
   }
