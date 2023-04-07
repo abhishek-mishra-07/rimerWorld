@@ -10,7 +10,7 @@
   
   .service-item img {
     width: 64px;
-    height: 64px;
+    height: auto;
   }
   
   /* Technologies */
@@ -25,7 +25,7 @@
   
   .technology-item img {
     width: 64px;
-    height: 64px;
+    height: auto;
   }
   
   /* Experiences */
@@ -40,7 +40,7 @@
   
   .experience-item img {
     width: 64px;
-    height: 64px;
+    height: auto;
   }
   
   .experience-item ul {
