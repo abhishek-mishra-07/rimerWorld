@@ -1,6 +1,8 @@
 const data = {
     "name": "Abhishek Harshvardhan Mishra",
-    "bio": "Hi, I am Abhishek, this is my world. I also write stuff by the pen name 'rimer' or 'rimerlord', hence this is rimer world.",
+    "bio": `I am a man of love and purpose. I love to build stuff (anything in software).
+    Reach out for a chat if you like to build stuff or have a bunch of ideas in general.
+    I would never say no to an exchange of ideas.`,
     "portfolio": [
       {
         "title": "Project 1",

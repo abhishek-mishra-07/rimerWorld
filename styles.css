@@ -20,7 +20,7 @@ body {
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     line-height: 1.2;
-    text-align: left;
+    text-align:justify;
   }
   
   h1 { font-size: 36px; }
@@ -106,11 +106,11 @@ body {
     align-items: center;
     margin: 10px;
     padding: 10px;
-    max-width: 200px;
+    max-width: 500px;
   }
   
   .project-item img {
-    width: 120px;
+    width: 300px;
     height: auto;
   }
   
@@ -139,7 +139,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #b12222;
+  background-color: #d3bd2b;
 }
 
 nav ul {
@@ -149,7 +149,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: #042502;
   text-decoration: none;
   transition: 0.3s;
 }
