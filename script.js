@@ -87,7 +87,7 @@ projects.forEach(project => {
           .map(tag => `<span class="tag ${tag.color}">${tag.name}</span>`)
           .join("")}
       </div>
-      <a href="${project.source_code_link}" target="_blank">View Source Code</a>
+      <a href="${project.source_code_link}" target="_blank">Visit</a>
 </div>`;
 projectsItems.innerHTML += projectItem;
 });
