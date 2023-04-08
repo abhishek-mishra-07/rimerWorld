@@ -2,7 +2,7 @@ const data = {
     "name": "Abhishek Harshvardhan Mishra",
     "bio": `I am a man of love and purpose. I love to build stuff (anything in software).
     Reach out for a chat if you like to build stuff or have a bunch of ideas in general.
-    I would never say no to an exchange of ideas.`,
+    I would never say no to an exchange of ideas. I am also not a UI/UX guy and this website is vanilla HTML/CSS/JS`,
     "blogPosts": [
       {
         "title": "My first blog post",
